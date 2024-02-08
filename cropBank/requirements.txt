@@ -2,3 +2,4 @@ django
 requests
 twilio
 pillow
+geopy
