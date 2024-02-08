@@ -1,0 +1,257 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Safira – Organic food HTML Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}
+    ">
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{% static 'css/font.awesome.css' %}">
+    <!--ionicons css-->
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <!--linearicons css-->
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{% static 'assets/css/slinky.menu.css' %}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!--modernizr min js here-->
+    <script src="{% static 'js/vendor/modernizr-3.7.1.min.js' %}"></script>
+</head>
+
+<body>
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li><a class="active" href="{% url 'index' %}">home</a>
+
+                                </li>
+                                <li><a href="{% url 'aboutus' %}">Crop Circle</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'aboutBank' %}">Crop Banks</a></li>
+                                <li><a href="{% url 'veggieshop' %}">Veggie Shop</a></li>
+                                <li><a href="{% url 'BidZone' %}">BidZone</a></li>
+                                <li><a href="{% url 'aboutCropGuide' %}"> Crop Guide</a></li>
+                                <li><a href="{% url 'aboutCropHealth' %}"> Crop Health</a></li>
+                                <li><a href="{% url 'aboutTransport' %}"> Transport</a></li>
+                                <li><a href="{% url 'contactUs' %}"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--offcanvas menu area end-->
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+
+                <div class="header_middle">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-6 col-sm-7 col-8">
+
+                                <div class="header_right_info">
+
+                                    <div class="header_account_area">
+                                        <div class="header_account_list register">
+                                            <ul class="button">
+                                                <li><a href="{% url 'register' %}">Register</a></li>
+                                                <li><span>/</span></li>
+                                                <li><a href="{% url 'login' %}">Login</a></li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_bottom sticky-header">
+                                <div class="container">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-lg-6">
+                                            <!--main menu start-->
+                                            <div class="main_menu menu_position">
+                                                <nav>
+                                                    <ul>
+                                                        <li><a class="active" href="{% url 'index' %}">home</a>
+
+                                                        </li>
+                                                        <li><a href="{% url 'aboutus' %}">Crop Circle</a></li>
+                                                        <li><a href="{% url 'services' %}">Services</a></li>
+                                                        <li><a href="{% url 'aboutBank' %}">Crop Banks</a></li>
+                                                        <li><a href="{% url 'veggieshop' %}">Veggie Shop</a></li>
+                                                        <li><a href="{% url 'BidZone' %}">BidZone</a></li>
+                                                        <li><a href="{% url 'aboutCropGuide' %}"> Crop Guide</a></li>
+                                                        <li><a href="{% url 'aboutCropHealth' %}"> Crop Health</a></li>
+                                                        <li><a href="{% url 'aboutTransport' %}"> Transport</a></li>
+                                                        <li><a href="{% url 'contactUs' %}"> Contact Us</a></li>
+
+
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                            <!--main menu end-->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </header>
+
+
+<!-- customer login start -->
+<!-- customer login start -->
+    <div class="container1">
+        <div class="row">
+            <!--login area start-->
+            <div class="col-lg-6 col-md-6">
+                    <div class="heading1">Sign In</div>
+                    <div id="message-area">
+                        {% if messages %}
+                            <div class="messages">
+                                {% for message in messages %}
+                                    <p class="{{ message.tags }}">{{ message }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <form id="login-form" method="post" action="{% url 'login' %}" class="form1">
+                        {% csrf_token %}
+                        <input required="" class="input" type="text" name="username" placeholder="Username">
+                        <input required="" class="input" type="password" name="password" placeholder="Password">
+                        <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+                        <input class="login-button" type="submit" value="Sign In">
+                    </form>
+                
+            </div>
+            <!--login area start-->
+        </div>
+    </div>
+
+<!-- customer login end -->
+
+<!-- customer login end -->
+
+<!-- customer login end -->
+
+
+
+
+ <!--footer area start-->
+ <footer class="footer_widgets footer_border">
+            
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7">
+                    <div class="copyright_area">
+                        <p>Copyright © 2024 <a href="#">Crop Circle</a> . All Rights Reserved.Design by <a
+                                href="#">Crop Circle</a></p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer area end-->
+    
+    
+<!-- JS
+============================================ -->
+<!--jquery min js-->
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<!--popper min js-->
+<script src="assets/js/popper.js"></script>
+<!--bootstrap min js-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--owl carousel min js-->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--slick min js-->
+<script src="assets/js/slick.min.js"></script>
+<!--magnific popup min js-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--counterup min js-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--jquery countdown min js-->
+<script src="assets/js/jquery.countdown.js"></script>
+<!--jquery ui min js-->
+<script src="assets/js/jquery.ui.js"></script>
+<!--jquery elevatezoom min js-->
+<script src="assets/js/jquery.elevatezoom.js"></script>
+<!--isotope packaged min js-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!--slinky menu js-->
+<script src="assets/js/slinky.menu.js"></script>
+<!--instagramfeed menu js-->
+<script src="assets/js/jquery.instagramFeed.min.js"></script>
+<!-- tippy bundle umd js -->
+<script src="assets/js/tippy-bundle.umd.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        var messageArea = document.getElementById('message-area');
+        messageArea.innerHTML = '';  // Clear existing messages
+        
+        var usernameInput = document.querySelector('input[name="username"]');
+        var passwordInput = document.querySelector('input[name="password"]');
+        
+        if (!usernameInput.value || !passwordInput.value) {
+            // Display a message if either username or password is empty
+            messageArea.innerHTML = '<p class="error">Please enter both username and password.</p>';
+            event.preventDefault();  // Prevent form submission
+        }
+    });
+    </script>
+
+</body>
+
+</html>

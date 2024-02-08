@@ -1,0 +1,471 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Safira - product details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{% static 'css/font.awesome.css' %}">
+    <!--ionicons css-->
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <!--linearicons css-->
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{% static 'css/slinky.menu.css' %}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!--modernizr min js here-->
+    <script src="{% static 'js/vendor/modernizr-3.7.1.min.js' %}"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+
+    <!--offcanvas menu area start-->
+
+
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+
+
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li><a class="active" href="{% url 'index' %}">home</a>
+
+                                </li>
+                                <li><a href="{% url 'aboutus' %}">Crop Circle</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'aboutBank' %}">Crop Banks</a></li>
+                                <li><a href="{% url 'veggieshop' %}">Veggie Shop</a></li>
+                                <li><a href="{% url 'BidZone' %}">BidZone</a></li>
+                                <li><a href="{% url 'aboutCropGuide' %}"> Crop Guide</a></li>
+                                <li><a href="{% url 'aboutCropHealth' %}"> Crop Health</a></li>
+                                <li><a href="{% url 'aboutTransport' %}"> Transport</a></li>
+                                <li><a href="{% url 'contactUs' %}"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--offcanvas menu area end-->
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+
+                <div class="header_middle">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-10 col-md-6 col-sm-7 col-8"> -->
+
+                            <!-- <div class="header_right_info">
+
+                                    <div class="header_account_area">
+                                        <div class="header_account_list register">
+                                            <ul>
+                                                <li><a href="#">Register</a></li>
+                                                <li><span>/</span></li>
+                                                <li><a href="#">Login</a></li>
+                                            </ul>
+                                        </div>
+                                       
+                                            <div class="mini_cart">
+                                                <div class="cart_gallery">
+                                                    <div class="cart_close">
+                                                        <div class="cart_text">
+                                                            <h3>cart</h3>
+                                                        </div>
+                                                        <div class="mini_cart_close">
+                                                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart_item">
+                                                        <div class="cart_img">
+                                                            <a href="#"><img src="assets/img/s-product/product.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                        <div class="cart_info">
+                                                            <a href="#">Primis In Faucibus</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> -->
+                            <!-- </div> -->
+                            <div class="header_bottom sticky-header">
+                                <div class="container">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-lg-6">
+                                            <!--main menu start-->
+                                            <div class="main_menu menu_position">
+                                                <nav>
+                                                    <ul>
+                                                        <li><a class="active" href="{% url 'index' %}">home</a>
+
+                                                        </li>
+                                                        <li><a href="{% url 'aboutus' %}">Crop Circle</a></li>
+                                                        <li><a href="{% url 'services' %}">Services</a></li>
+                                                        <li><a href="{% url 'aboutBank' %}">Crop Banks</a></li>
+                                                        <li><a href="{% url 'veggieshop' %}">Veggie Shop</a></li>
+                                                        <li><a href="{% url 'BidZone' %}">BidZone</a></li>
+                                                        <li><a href="{% url 'aboutCropGuide' %}"> Crop Guide</a></li>
+                                                        <li><a href="{% url 'aboutCropHealth' %}"> Crop Health</a></li>
+                                                        <li><a href="{% url 'aboutTransport' %}"> Transport</a></li>
+                                                        <li><a href="{% url 'contactUs' %}"> Contact Us</a></li>
+
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                            <!--main menu end-->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </header>
+    <!--header area end-->
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content1">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>Bank Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--product details start-->
+    <div class="product_details mt-70 mb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-61 col-md-6">
+                    <div class="product-details-tab">
+                        <div id="img-1" class="zoomWrapper single-zoom">
+                            <a href="#">
+                                <img id="zoom1" src="{{ bank.bank_image.url }}"
+                                    data-zoom-image="{{ bank.bank_image.url }}" alt="{{ bank.bank_name }}">
+                            </a>
+                        </div>
+                        <div class="single-zoom-thumb">
+                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
+                                {% for image in bank.images.all %}
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                        data-image="{{ image.image.url }}" data-zoom-image="{{ image.image.url }}">
+                                        <img src="{{ image.image.url }}" alt="zo-th-{{ forloop.counter }}">
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-61 col-md-6">
+                    <div class="product_d_right">
+                        <form action="#">
+
+                            <h1><a href="#">{{ bank.bank_name }}</a></h1>
+
+                            <div class="product_ratting">
+                                <ul>
+                                    {% with review=bank.review|stringformat:"f"|floatformat %}
+                                    {% with full_stars=review|floatformat %}
+                                    {% for star in "12345" %}
+                                    {% if star == full_stars %}
+                                    {% if review > full_stars %}
+                                    <li><a href="#" style="color: gold;"><i class="icon-star-half"></i></a></li>
+                                    {% else %}
+                                    <li><a href="#" style="color: gold;"><i class="icon-star"></i></a></li>
+                                    {% endif %}
+                                    {% elif star < full_stars %} <li><a href="#" style="color: gold;"><i
+                                                class="icon-star"></i></a></li>
+                                        {% else %}
+                                        <li><a href="#" style="color: gray;"><i class="icon-star"></i></a></li>
+                                        {% endif %}
+                                        {% endfor %}
+                                        <li class="review"><a href="#"> {{ bank.review }} </a></li>
+                                        {% endwith %}
+                                        {% endwith %}
+                                </ul>
+                            </div>
+
+
+                            <div class="price_box">
+                                <span class="current_price"> {{ bank.location }}</span>
+
+
+                            </div>
+                            <div class="product_desc">
+                                <p><b>Capacity: </b>{{ bank.capacity }} tons
+                                    <br>
+                                    <b>Description: </b>{{ bank.description }}
+                                </p>
+                            </div>
+                            <div class="product_variant color">
+                                <h3>Available Commodities</h3>
+
+                                <ul>
+                                    {% for commodity in bank.commodities.all %}
+                                    <li>{{ commodity.name }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="product_variant quantity">
+                                <label>quantity</label>
+                                <input min="1" max="100" value="1" type="number"> &nbsp; tons
+                            </div>
+                            <button class="button" type="submit">Call Now</button>
+
+                        </form><br>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product details end-->
+
+    <!--product info start-->
+    <div class="product_d_info mb-65">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="product_d_inner">
+                        <div class="product_info_button">
+                            <ul class="nav" role="tablist" id="nav-tab">
+                                <li>
+                                    <a class="active" data-toggle="tab" href="#reviews" role="tab"
+                                        aria-controls="reviews" aria-selected="false">Reviews</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade show active" id="reviews" role="tabpanel">
+                                <div class="reviews_wrapper">
+                                    <h2>1 review for {{ bank.bank_name }}</h2>
+                                    <div class="reviews_comment_box">
+                                        <div class="comment_thmb">
+                                            <img src="{% static 'img/blog/comment2.jpg' %}" alt="">
+                                        </div>
+                                        <div class="comment_text">
+                                            <div class="reviews_meta">
+                                                <div class="star_rating">
+                                                    <ul>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <p><strong>admin </strong>- September 12, 2018</p>
+                                                <span>roadthemes</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="comment_title">
+                                        <h2>Add a review </h2>
+                                        <p>Your email address will not be published. Required fields are marked </p>
+                                    </div>
+                                    <div class="product_ratting mb-10">
+                                        <h3>Your rating</h3>
+                                        <ul>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product_review_form">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="review_comment">Your review </label>
+                                                    <textarea name="comment" id="review_comment"></textarea>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label for="author">Name</label>
+                                                    <input id="author" type="text">
+
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label for="email">Email </label>
+                                                    <input id="email" type="text">
+                                                </div>
+                                            </div>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product info end-->
+
+    <!--product area start-->
+    <section class="product_area related_products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2>More Banks near {{ bank.location }} </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="product_carousel product_column5 owl-carousel">
+                        {% for related_bank in related_banks %}
+                        <div class="product_items">
+                            <article class="single_product">
+                                <div class="product_thumb">
+                                    <a class="primary_img" href="{% url 'product-details' related_bank.id %}">
+                                        {% if related_bank.bank_image %}
+                                            <img src="{{ related_bank.bank_image.url }}" alt="{{ related_bank.bank_name }}">
+                                        {% endif %}
+                                    </a>
+                                </div>
+                                <figcaption class="product_content">
+                                    <h4 class="product_name">
+                                        <a href="{% url 'product-details' bank.id %}">{{ related_bank.bank_name }}</a>
+                                    </h4>
+                                    <p><a href="#">{{ related_bank.location }}</a></p>
+                                    <div class="price_box">
+                                        <span class="current_price">{{ related_bank.capacity }} tons</span>
+                                    </div>
+                                </figcaption>
+                            </article>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--product area end-->
+<!-- product-details.html -->
+
+
+  
+     <!--footer area start-->
+     <footer class="footer_widgets footer_border">
+            
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="copyright_area">
+                            <p>Copyright © 2024 <a href="#">Crop Circle</a> . All Rights Reserved.Design by <a
+                                    href="#">Crop Circle</a></p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="{% static 'js/vendor/jquery-3.4.1.min.js' %}"></script>
+    <!--popper min js-->
+    <script src="{% static 'js/popper.js' %}"></script>
+    <!--bootstrap min js-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!--owl carousel min js-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!--slick min js-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!--magnific popup min js-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!--counterup min js-->
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <!--jquery countdown min js-->
+    <script src="{% static 'js/jquery.countdown.js' %}"></script>
+    <!--jquery ui min js-->
+    <script src="{% static 'js/jquery.ui.js' %}"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="{% static 'js/jquery.elevatezoom.js' %}"></script>
+    <!--isotope packaged min js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--slinky menu js-->
+    <script src="{% static 'js/slinky.menu.js' %}"></script>
+    <!--instagramfeed menu js-->
+    <script src="{% static 'js/jquery.instagramFeed.min.js' %}"></script>
+    <!-- tippy bundle umd js -->
+    <script src="{% static 'js/tippy-bundle.umd.js' %}"></script>
+    <!-- Plugins JS -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+
+    <!-- Main JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>

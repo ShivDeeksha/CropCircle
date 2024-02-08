@@ -1,0 +1,5 @@
+django
+requests
+twilio
+pillow
+pandas scikit-learn
