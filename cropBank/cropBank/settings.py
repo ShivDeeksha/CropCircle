@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 token: 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
 """
-
 from pathlib import Path
 import os
 
